@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<style type="text/css">
+
+body {
+	font-family: Arial;
+	font-size: 50px;
+}
+
+#container {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	color: #2980b9;
+	border-right: 3px solid #2980b9;
+}
+
+</style>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -39,11 +59,75 @@
                 <!-- Masthead Avatar Image Removed--><img class="masthead-avatar mb-5" src="assets/img/avataaars" alt="">
                 <!-- Masthead Heading-->
                 
-				<h1>
-				  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-				    <span class="wrap"></span>
-				  </a>
-				</h1>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="BPRY8DJJFC2DE">
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+				<script type="text/javascript">
+
+// List of sentences
+var _CONTENT = [ "Twinkle, twinkle, little star", "How I wonder what you are", "Up above the world so high", "Like a diamond in the sky" ];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Implements typing effect
+function Type() { 
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If last sentence then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+
+</script>
+
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -54,24 +138,6 @@
                 <p class="pre-wrap masthead-subheading font-weight-light mb-0">Research - Develop - Write - Teach</p>
 
                 <!--Paypal Forms-->
-
-                <!--$2 form-->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="97NAKHXH7B6HE">
-					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-				
-				<!--$1 form-->
-				</form>
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="P3VTFMVEEMWTL">
-					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-				</form>
-
-
 
             </div>
         </header>
