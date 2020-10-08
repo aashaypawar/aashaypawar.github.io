@@ -51,12 +51,8 @@
                 <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
 
                 <!--Paypal INR 10 -->
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="M3X4232TVT4QA">
-					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-				</form>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+				<script>paypal.Buttons().render('body');</script>
 
             </div>
         </header>
