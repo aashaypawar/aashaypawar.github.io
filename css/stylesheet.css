@@ -618,7 +618,7 @@ hr {
 
 .section {
   position: relative;
-  padding: 4.5rem 0;
+  padding: 0rem 0;
   overflow: hidden;
 }
 
@@ -664,26 +664,8 @@ hr {
   -o-animation: fadeInDown 1.5s infinite;
 }
 
-.scroll-down-arrow-dark {
-  position: absolute;
-  z-index: 3;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -16px;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 20px;
-  text-align: center;
-  color: #000;
-}
-.scroll-down-arrow-dark .animated {
-  position: relative;
-  animation: fadeInDown 1.5s infinite;
-  -webkit-animation: fadeInDown 1.5s infinite;
-  -moz-animation: fadeInDown 1.5s infinite;
-  -o-animation: fadeInDown 1.5s infinite;
-}
+
+
 
 @keyframes fadeInDown {
   0% {
