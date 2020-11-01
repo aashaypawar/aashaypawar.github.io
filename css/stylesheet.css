@@ -3335,3 +3335,246 @@ input:-internal-autofill-selected {
   border-radius: 4px 0px 0px 4px;
 }
 
+
+
+
+.ch-grid {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+  content: '';
+    display: table;
+}
+
+.ch-grid:after {
+  clear: both;
+}
+
+.ch-grid li {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+
+}
+
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+  cursor: default;
+}
+
+.ch-info-wrap{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+
+
+  background: #f9f9f9 url(../images/bg.jpg);
+  box-shadow: 
+    0 0 0 20px rgba(255,255,255,0.2), 
+    inset 0 0 3px rgba(115,114, 23, 0.8);
+
+}
+
+.ch-info{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+    
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+}
+
+.ch-info > div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-position: center center;
+
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.ch-info .ch-info-back {
+  -webkit-transform: rotate3d(0,1,0,180deg);
+  -moz-transform: rotate3d(0,1,0,180deg);
+  -o-transform: rotate3d(0,1,0,180deg);
+  -ms-transform: rotate3d(0,1,0,180deg);
+  transform: rotate3d(0,1,0,180deg);
+  
+  background: #000;
+}
+
+.ch-img-1 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/5fc2d535-e716-46c4-881a-f4822b8da0e5/Cognitive_Class_-_What_is_Data_Science.png);
+}
+
+.ch-img-2 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/60cf69ce-6129-425d-9a42-7732fa07da1e/Tools_for_Data_Science_Foundational.png);
+}
+
+.ch-img-3 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/0571ab1d-f43b-43d9-9c68-8ebd0ebd61b7/Python_for_Data_Sci_and_AI_Foundational.png);
+}
+
+.ch-img-4 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/46defa53-a922-47bd-94ea-b43488f5cd8a/Data_Science_Methodology_Foundational.png);
+}
+
+.ch-img-5 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/594e0ab7-c864-4d9a-9987-3a903ec3f06a/Cognitive_Class_-_DB_and_SQL_for_Data_Sci.png);
+}
+
+.ch-img-6 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/fa39f4f0-174a-4886-b821-6a37d42b8b3a/Cognitive_Class_-_Data_Analysis_w_Python.png);
+}
+
+.ch-img-7 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/5ae9bf9e-da6e-4cec-82eb-d2b4cfea9751/Machine_Learning_with_Python.png);
+}
+
+.ch-img-8 { 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/76326afb-199d-4250-a74f-01bc86dda118/Cognitive_Class_-_Data_Visual_w_Python.png);
+}
+
+.ch-img-9 { 
+  background-image: url(https://images.youracclaim.com/size/150x150/images/95cdac49-3220-43e7-8562-b8be4b938465/Professional_Certificate_-_Data_Science_-_Final_Draft_-_Blue_Text.png);
+}
+
+.ch-img-10{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/60f2e1e1-1b74-4dc0-a24b-cd08b460c12d/Applied_Data_Science_Capstone.png);
+}
+
+.ch-img-11{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/e6440901-1f1b-4c22-83f6-ab7316972c42/IBM_AI_-_Machine_Learning_with_Apache_Spark.png);
+}
+
+.ch-img-12{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/5e544cd5-d368-4f16-8348-5abfd71bd049/IBM_AI_-Deep_Learning_Essentials_with_Keras.png);
+}
+
+.ch-img-13{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/6be9e507-9096-4e18-aef8-e60893ed36c6/IBM_AI_-Deep_Neural_Networks_with_PyTorch.png);
+}
+
+.ch-img-14{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/4e2d2e18-e3ea-408d-b815-819bc58b1143/IBM_AI_-Deep_Learning_with_Tensorflow.png);
+}
+
+.ch-img-15{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/2b609053-f4fe-4171-8739-d9c1955deec4/Professional_Certificate_-_AI_Engineering.png);
+}
+
+.ch-img-16{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/34a57cf3-a492-4946-ad20-7ca15caa548c/90819_badges_Learn_CourseraCoBrand_Programming.png);
+}
+
+.ch-img-17{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/7ede5d20-3355-4dce-bec7-1f4483166c3e/90819_badges_Learn_CourseraCoBrand_Programming.png);
+}
+
+.ch-img-18{ 
+  background-image: url(https://images.youracclaim.com/size/200x200/images/d4176a76-9c24-4cf0-8793-1eafa24a2f34/90819_badges_Learn_CourseraCoBrand_Programming.png);
+}
+
+.ch-img-19{ 
+  background-image: url(https://s3.amazonaws.com/com.basno.storage/instances/p7smmgjs.png);
+}
+
+
+
+.ch-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 40px 0 0 0;
+  height: 90px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow: 
+    0 0 1px #fff, 
+    0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+  display: block;
+  color: #fff;
+  color: rgba(255,255,255,0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+  color: #fff222;
+  color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-wrap {
+  box-shadow: 
+    0 0 0 0 rgba(255,255,255,0.8), 
+    inset 0 0 3px rgba(115,114, 23, 0.8);
+}
+
+.ch-item:hover .ch-info {
+  -webkit-transform: rotate3d(0,1,0,-180deg);
+  -moz-transform: rotate3d(0,1,0,-180deg);
+  -o-transform: rotate3d(0,1,0,-180deg);
+  -ms-transform: rotate3d(0,1,0,-180deg);
+  transform: rotate3d(0,1,0,-180deg);
+}
+
